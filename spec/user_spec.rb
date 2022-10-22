@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   before(:each) do
-    @user = User.create(name: 'Bassi', photo: 'anas.png', bio: 'Student from Nigeria.',posts_counter: 0)
+    @user = User.create(name: 'Bassi', photo: 'anas.png', bio: 'Student from Nigeria.', posts_counter: 0)
   end
 
   context 'with invalid values' do
