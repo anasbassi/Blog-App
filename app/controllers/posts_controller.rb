@@ -35,6 +35,6 @@ class PostsController < ApplicationController
   end
 
   def set_user
-    @user = User.find(params[:author_id])
+    @user = User.find(params[:user_id])
   end
 end
