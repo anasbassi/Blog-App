@@ -33,6 +33,12 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@anasabu92568449](https://twitter.com/anasabu92568449)
 - LinkedIn: [Anas Abubakar](https://www.linkedin.com/in/anas-abubakar-bassi/)
 
+👤 **Temitope Ogunleye**
+
+- GitHub: [@topeogunleye](https://github.com/topeogunleye)
+- Twitter: [@tope_leye](https://twitter.com/tope_leye)
+- LinkedIn: [ogunleye](https://linkedin.com/in/ogunleye)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

@@ -8,11 +8,13 @@
         <p><%= post.text %></p>
         <p>Comments <%= post.comments_counter %>, Likes <%= post.likes_counter %></p>
         <ul>
-          <% post.recent_comments.each do |comment| %>
+          <% post.recent_comments.includes(:author).each do |comment| %>
             <li><%= comment.author.name %> : <%= comment.text %></li>
           <% end %>
         </ul>
       </li>
     <% end %>
   </ul>
+  <button>next</button>
+  <%= will_paginate @posts, :container => false %>
 </div>
