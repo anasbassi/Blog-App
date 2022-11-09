@@ -1,6 +1,6 @@
 <h1>user details</h1>
 <div>
-  <%= render 'layouts/user_card', user: @user %>
+  <%= render 'layouts/user', user: @user %>
   <div>
     <h3>Bio</h3>
     <p><%= @user.bio %></p>
@@ -8,11 +8,11 @@
   <ul>
     <% @user.posts.each do |post| %>
       <li>
-        <p><%= post.title %></p>
+        <p><%= link_to post.title, user_post_path(@user, post)%></p>
         <p><%= truncate(post.text, length: 50) %></p>
         <p>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
       </li>
     <% end %>
   </ul>
-  <button>See all posts</button>
+  <%= link_to "See all posts", user_posts_path(@user) %>
 </div>
