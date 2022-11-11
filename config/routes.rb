@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   # get "/", to: "users#index"
   
   resources :users, only: [:index, :show] do
-    resources :posts, only: [:index, :show, :new, :create] do
-      resources :comments, only: [:new, :create]
+    resources :posts, except: [:update, :edit] do
+      resources :comments, only: [:new, :create, :destroy]
       resources :likes, only: [:create]
     end
   end
