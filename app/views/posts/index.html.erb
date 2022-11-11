@@ -12,6 +12,10 @@
             <li><%= comment.author.name %> : <%= comment.text %></li>
           <% end %>
         </ul>
+        <% if can? :destroy, post %>
+          <%= link_to "Delete post", user_post_path(post.author, post), 
+          data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+        <% end %>
       </li>
     <% end %>
   </ul>
