@@ -14,7 +14,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Ruby runtime environment
 - PostgreSQL
-- Rails
+- Ruby on Rails
 
 ### Setup
 
