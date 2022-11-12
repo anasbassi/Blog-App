@@ -3,11 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.2'
 
+gem 'cancancan'
 gem 'devise'
 gem 'devise-bootstrap5'
 gem 'devise-i18n'
-
-gem 'cancancan'
+gem 'jwt'
+gem 'rack-cors'
+gem 'simple_command'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4'
 

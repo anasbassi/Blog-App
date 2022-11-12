@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
   devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
+  post 'authenticate', to: 'authentication#authenticate'
+  namespace :api do
+    resources :users do 
+      resources :posts 
+    end 
+    resources :posts do
+       resources :comments 
+       resources :likes 
+    end
+  end
   root "users#index"
-  # get "/", to: "users#index"
   
   resources :users, only: [:index, :show] do
     resources :posts, except: [:update, :edit] do
