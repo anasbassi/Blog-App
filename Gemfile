@@ -9,6 +9,7 @@ gem 'devise-bootstrap5'
 gem 'devise-i18n'
 gem 'jwt'
 gem 'rack-cors'
+gem 'rswag'
 gem 'simple_command'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4'
@@ -61,6 +62,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'rails-controller-testing'
   gem 'rspec-rails'
+  gem 'rswag-specs'
 end
 
 group :development do
